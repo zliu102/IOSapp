@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SCCreatePostViewController">
+            <connections>
+                <outlet property="postTextView" destination="y4X-Wb-83q" id="Cmh-bR-p5D"/>
+                <outlet property="selectedImageView" destination="APp-jV-NWn" id="Bft-w6-Var"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="APp-jV-NWn">
+                    <rect key="frame" x="20" y="407" width="335" height="190"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="190" id="gPw-uD-5KO"/>
+                    </constraints>
+                </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="y4X-Wb-83q">
+                    <rect key="frame" x="10" y="40" width="355" height="347"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="y4X-Wb-83q" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="10" id="8Bx-Tu-LW3"/>
+                <constraint firstItem="APp-jV-NWn" firstAttribute="top" secondItem="y4X-Wb-83q" secondAttribute="bottom" constant="20" id="JTN-Dd-v3W"/>
+                <constraint firstItem="APp-jV-NWn" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="Ohz-mM-Yez"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="y4X-Wb-83q" secondAttribute="trailing" constant="10" id="aqJ-a2-bDJ"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="APp-jV-NWn" secondAttribute="trailing" constant="20" id="krs-Qc-4HX"/>
+                <constraint firstItem="y4X-Wb-83q" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="lrN-cs-AvH"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="APp-jV-NWn" secondAttribute="bottom" constant="70" id="oiV-F8-taK"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>
